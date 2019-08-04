@@ -75,15 +75,10 @@ extension TrackSectionsTableViewCell: UICollectionViewDataSource {
 
 // MARK: - APIManagerProtocol
 extension TrackSectionsTableViewCell: APIManagerProtocol {
-    
-    func loadInSafari(url: String) {
-        self.delegate?.loadInSafari(url: url)
+    func loadInMediaPlayer(url: String, description: String) {
+        self.delegate?.loadInMediaPlayer(url: url, description: description)
     }
-    
-    func loadInMediaPlayer(url: String) {
-        self.delegate?.loadInMediaPlayer(url: url)
-    }
-    
+
     func loadTrackImage(from url: URL, completed: @escaping (UIImage) -> Void) {
         self.delegate?.loadTrackImage(from: url, completed: { (image) in
             completed(image)

@@ -29,6 +29,8 @@
 		E3E29E1F22F6CB87009DA589 /* SafariBasedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E29E1E22F6CB87009DA589 /* SafariBasedViewController.swift */; };
 		E3E29E2122F6EE28009DA589 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E29E2022F6EE28009DA589 /* EmptyStateView.swift */; };
 		E3E29E2322F6EE30009DA589 /* EmptyStateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3E29E2222F6EE30009DA589 /* EmptyStateView.xib */; };
+		E3E29E2522F70DCD009DA589 /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E29E2422F70DCD009DA589 /* InformationView.swift */; };
+		E3E29E2722F70DD9009DA589 /* InformationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3E29E2622F70DD9009DA589 /* InformationView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +59,8 @@
 		E3E29E1E22F6CB87009DA589 /* SafariBasedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariBasedViewController.swift; sourceTree = "<group>"; };
 		E3E29E2022F6EE28009DA589 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 		E3E29E2222F6EE30009DA589 /* EmptyStateView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyStateView.xib; sourceTree = "<group>"; };
+		E3E29E2422F70DCD009DA589 /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
+		E3E29E2622F70DD9009DA589 /* InformationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationView.xib; sourceTree = "<group>"; };
 		E9CC7776A2256E17FD80E4B4 /* Pods_iTunesStoreApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTunesStoreApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -132,6 +136,8 @@
 				E3E29E1722F6736B009DA589 /* TrackSectionsTableViewCell.xib */,
 				E3E29E2022F6EE28009DA589 /* EmptyStateView.swift */,
 				E3E29E2222F6EE30009DA589 /* EmptyStateView.xib */,
+				E3E29E2422F70DCD009DA589 /* InformationView.swift */,
+				E3E29E2622F70DD9009DA589 /* InformationView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -231,6 +237,7 @@
 				E3E29E2322F6EE30009DA589 /* EmptyStateView.xib in Resources */,
 				E3E29E1922F6736B009DA589 /* TrackSectionsTableViewCell.xib in Resources */,
 				E3E29E1322F6726F009DA589 /* TrackCollectionViewCell.xib in Resources */,
+				E3E29E2722F70DD9009DA589 /* InformationView.xib in Resources */,
 				E3E29DF922F65B0B009DA589 /* LaunchScreen.storyboard in Resources */,
 				E3E29DF622F65B0B009DA589 /* Assets.xcassets in Resources */,
 				E3E29DF422F65B06009DA589 /* Main.storyboard in Resources */,
@@ -296,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3E29E1B22F6A66D009DA589 /* FavouritesViewController.swift in Sources */,
+				E3E29E2522F70DCD009DA589 /* InformationView.swift in Sources */,
 				E3E29E0622F65DEB009DA589 /* APIManager.swift in Sources */,
 				E3E29E0D22F66D6C009DA589 /* UserModel.swift in Sources */,
 				E3E29DF122F65B06009DA589 /* HomeViewController.swift in Sources */,
@@ -459,6 +467,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XUN95V9WDZ;
 				INFOPLIST_FILE = iTunesStoreApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -478,6 +487,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XUN95V9WDZ;
 				INFOPLIST_FILE = iTunesStoreApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -23,5 +23,14 @@ class SafariBasedViewController: UIViewController {
         present(svc, animated: true, completion: nil)
     }
     
+    
+    func showPreview(with url: URL) {
+        let player = AVPlayer(url: url)
+        let playerViewController = AVPlayerViewController()
+        playerViewController.player = player
+        self.present(playerViewController, animated: true) {
+            playerViewController.player!.play()
+        }
+    }
 
 }

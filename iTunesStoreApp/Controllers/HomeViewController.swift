@@ -91,22 +91,18 @@ extension HomeViewController: UITableViewDataSource {
 
 // MARK: APIManagerProtocol
 extension HomeViewController: APIManagerProtocol {
-    func loadInSafari(url: String) {
-        self.openInSafari(with: url)
-    }
-    
-    
-    func loadInMediaPlayer(url: String) {
-        guard let url = URL(string: url) else {return}
-        let player = AVPlayer(url: url)
-        let playerController = AVPlayerViewController()
-        playerController.player = player
-        self.present(playerController, animated: true) {
-            player.play()
+    func loadInMediaPlayer(url: String, description: String) {
+        guard let previewUrl = URL(string: url) else {return}
+        if description == "" {
+            self.showPreview(with: previewUrl)
+        } else {
+            let infoView = UINib(nibName: "InformationView", bundle: nil).instantiate(withOwner: nil, options: nil).first as? InformationView
+            infoView?.frame = self.view.frame
+            infoView?.configure(with: description, previewURL: previewUrl)
+            self.view.addSubview(infoView!)
         }
     }
-    
-    
+
     func loadTrackImage(from url: URL, completed: @escaping (UIImage) -> Void) {
         self.apiManager.loadTrackImage(from: url) { (image) in
             completed(image)

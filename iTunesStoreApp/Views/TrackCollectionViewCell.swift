@@ -28,7 +28,6 @@ class TrackCollectionViewCell: UICollectionViewCell, Reusable {
     @IBOutlet weak var trackNameLabel: UILabel!
     
     @IBOutlet weak var favouriteButton: UIButton!
-    @IBOutlet weak var artistInfoButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -87,13 +86,9 @@ class TrackCollectionViewCell: UICollectionViewCell, Reusable {
         }
         self.databaseMangerDelegate?.didUpdateTrackModels()
     }
-    
-    @IBAction func viewMoreButtonTouchedUp(_ sender: UIButton) {
-        self.apiManagerDelegate?.loadInSafari(url: self.trackModel!.artistViewUrl)
-    }
-    
+
     @IBAction func openWebpageTouchedUp(_ sender: UIButton) {
-        self.apiManagerDelegate?.loadInMediaPlayer(url: self.trackModel!.previewUrl)
+        self.apiManagerDelegate?.loadInMediaPlayer(url: self.trackModel!.previewUrl, description: self.trackModel!.longDescription)
     }
     
     

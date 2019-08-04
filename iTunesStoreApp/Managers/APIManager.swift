@@ -12,8 +12,7 @@ import RealmSwift
 
 protocol APIManagerProtocol {
     func loadTrackImage(from url: URL, completed: @escaping (UIImage) -> Void)
-    func loadInMediaPlayer(url: String)
-    func loadInSafari(url: String)
+    func loadInMediaPlayer(url: String, description: String)
 }
 
 

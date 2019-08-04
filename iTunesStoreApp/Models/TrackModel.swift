@@ -24,14 +24,13 @@ class TrackModel: Object {
     
     @objc dynamic var id: String = ""
     @objc dynamic var trackId: Int = 0
+    @objc dynamic var longDescription: String = ""
     @objc dynamic var kind: String = ""
     @objc dynamic var artistName: String = ""
     @objc dynamic var collectionName: String = ""
     @objc dynamic var trackName: String = ""
     @objc dynamic var trackPrice: Double = 0
     @objc dynamic var currency: String = ""
-    @objc dynamic var trackViewUrl: String = ""
-    @objc dynamic var artistViewUrl: String = ""
     @objc dynamic var previewUrl: String = ""
     @objc dynamic var artworkUrl100: String = ""
     @objc dynamic var primaryGenreName: String = ""
@@ -57,10 +56,9 @@ class TrackModel: Object {
         self.collectionName = data["collectionName"] as? String ?? EmptyResults.unavailable.rawValue
         self.primaryGenreName = data["primaryGenreName"] as? String ?? EmptyResults.unavailable.rawValue
         self.currency = data["currency"] as? String ?? EmptyResults.unavailable.rawValue
+        self.longDescription = data["longDescription"] as? String ?? ""
         self.artworkUrl100 = data["artworkUrl100"] as? String ?? ""
-        self.artistViewUrl = data["artistViewUrl"] as? String ?? ""
         self.previewUrl = data["previewUrl"] as? String ?? ""
-        self.trackViewUrl = data["trackViewUrl"] as? String ?? ""
         
         self.isFavourite = DatabaseManager.Instance.checkIfTrackIsFavourite(with: self.trackId)
         
