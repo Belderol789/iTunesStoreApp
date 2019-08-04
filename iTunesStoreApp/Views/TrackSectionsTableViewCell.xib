@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="190" id="KGk-i7-Jjw" customClass="TrackSectionsTableViewCell" customModule="iTunesStoreApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="433" height="190"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="433" height="189.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTT-Vc-Q5X">
+                        <rect key="frame" x="28" y="63" width="377" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="h6t-f4-RcM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="NIn-eG-cAg">
+                        <rect key="frame" x="0.0" y="92" width="433" height="89"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ha8-Bq-Q26">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hj7-8c-K1Q">
+                        <rect key="frame" x="0.0" y="189" width="433" height="0.5"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="hUz-aq-QUa"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="NIn-eG-cAg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="0oj-eF-G2Q"/>
+                    <constraint firstItem="pTT-Vc-Q5X" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="3QE-FX-5XK"/>
+                    <constraint firstItem="NIn-eG-cAg" firstAttribute="top" secondItem="pTT-Vc-Q5X" secondAttribute="bottom" constant="8" id="J7O-qH-XdP"/>
+                    <constraint firstItem="hj7-8c-K1Q" firstAttribute="top" secondItem="NIn-eG-cAg" secondAttribute="bottom" constant="8" id="JMQ-0q-Pir"/>
+                    <constraint firstAttribute="trailing" secondItem="NIn-eG-cAg" secondAttribute="trailing" id="TGu-2G-3yj"/>
+                    <constraint firstItem="hj7-8c-K1Q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="an5-G4-VEz"/>
+                    <constraint firstAttribute="bottom" secondItem="hj7-8c-K1Q" secondAttribute="bottom" id="dbl-rb-Tm0"/>
+                    <constraint firstAttribute="trailing" secondItem="hj7-8c-K1Q" secondAttribute="trailing" id="eGn-WU-2jP"/>
+                    <constraint firstItem="pTT-Vc-Q5X" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="j4T-fR-Bjd"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="pTT-Vc-Q5X" secondAttribute="trailing" constant="8" id="sOO-mW-tOP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="trackCollectionView" destination="NIn-eG-cAg" id="oeF-8u-lLa"/>
+                <outlet property="trackSectionLabel" destination="pTT-Vc-Q5X" id="ICP-PL-aQf"/>
+            </connections>
+            <point key="canvasLocation" x="132.60869565217394" y="84.375"/>
+        </tableViewCell>
+    </objects>
+</document>

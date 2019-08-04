@@ -9,10 +9,26 @@
 /* Begin PBXBuildFile section */
 		115EECDDFA19CBC28EC1110E /* Pods_iTunesStoreApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9CC7776A2256E17FD80E4B4 /* Pods_iTunesStoreApp.framework */; };
 		E3E29DEF22F65B06009DA589 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E29DEE22F65B06009DA589 /* AppDelegate.swift */; };
-		E3E29DF122F65B06009DA589 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E29DF022F65B06009DA589 /* ViewController.swift */; };
+		E3E29DF122F65B06009DA589 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E29DF022F65B06009DA589 /* HomeViewController.swift */; };
 		E3E29DF422F65B06009DA589 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3E29DF222F65B06009DA589 /* Main.storyboard */; };
 		E3E29DF622F65B0B009DA589 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3E29DF522F65B0B009DA589 /* Assets.xcassets */; };
 		E3E29DF922F65B0B009DA589 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3E29DF722F65B0B009DA589 /* LaunchScreen.storyboard */; };
+		E3E29E0322F65D48009DA589 /* TrackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E29E0222F65D48009DA589 /* TrackModel.swift */; };
+		E3E29E0622F65DEB009DA589 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E29E0522F65DEB009DA589 /* APIManager.swift */; };
+		E3E29E0922F669A3009DA589 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E29E0822F669A3009DA589 /* DatabaseManager.swift */; };
+		E3E29E0B22F66D65009DA589 /* CollectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E29E0A22F66D65009DA589 /* CollectionModel.swift */; };
+		E3E29E0D22F66D6C009DA589 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E29E0C22F66D6C009DA589 /* UserModel.swift */; };
+		E3E29E0F22F66FAC009DA589 /* ContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E29E0E22F66FAC009DA589 /* ContentManager.swift */; };
+		E3E29E1222F6726F009DA589 /* TrackCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E29E1022F6726F009DA589 /* TrackCollectionViewCell.swift */; };
+		E3E29E1322F6726F009DA589 /* TrackCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3E29E1122F6726F009DA589 /* TrackCollectionViewCell.xib */; };
+		E3E29E1522F67297009DA589 /* ExtensionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E29E1422F67297009DA589 /* ExtensionsManager.swift */; };
+		E3E29E1822F6736B009DA589 /* TrackSectionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E29E1622F6736B009DA589 /* TrackSectionsTableViewCell.swift */; };
+		E3E29E1922F6736B009DA589 /* TrackSectionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3E29E1722F6736B009DA589 /* TrackSectionsTableViewCell.xib */; };
+		E3E29E1B22F6A66D009DA589 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E29E1A22F6A66C009DA589 /* FavouritesViewController.swift */; };
+		E3E29E1D22F6CB0D009DA589 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E29E1C22F6CB0D009DA589 /* DiscoverViewController.swift */; };
+		E3E29E1F22F6CB87009DA589 /* SafariBasedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E29E1E22F6CB87009DA589 /* SafariBasedViewController.swift */; };
+		E3E29E2122F6EE28009DA589 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E29E2022F6EE28009DA589 /* EmptyStateView.swift */; };
+		E3E29E2322F6EE30009DA589 /* EmptyStateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3E29E2222F6EE30009DA589 /* EmptyStateView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,11 +36,27 @@
 		D0EF174BE8989E0E15B0C354 /* Pods-iTunesStoreApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunesStoreApp.debug.xcconfig"; path = "Target Support Files/Pods-iTunesStoreApp/Pods-iTunesStoreApp.debug.xcconfig"; sourceTree = "<group>"; };
 		E3E29DEB22F65B06009DA589 /* iTunesStoreApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesStoreApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3E29DEE22F65B06009DA589 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E3E29DF022F65B06009DA589 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E3E29DF022F65B06009DA589 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E3E29DF322F65B06009DA589 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E3E29DF522F65B0B009DA589 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3E29DF822F65B0B009DA589 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3E29DFA22F65B0B009DA589 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3E29E0222F65D48009DA589 /* TrackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackModel.swift; sourceTree = "<group>"; };
+		E3E29E0522F65DEB009DA589 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		E3E29E0822F669A3009DA589 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		E3E29E0A22F66D65009DA589 /* CollectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionModel.swift; sourceTree = "<group>"; };
+		E3E29E0C22F66D6C009DA589 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		E3E29E0E22F66FAC009DA589 /* ContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentManager.swift; sourceTree = "<group>"; };
+		E3E29E1022F6726F009DA589 /* TrackCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCollectionViewCell.swift; sourceTree = "<group>"; };
+		E3E29E1122F6726F009DA589 /* TrackCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackCollectionViewCell.xib; sourceTree = "<group>"; };
+		E3E29E1422F67297009DA589 /* ExtensionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsManager.swift; sourceTree = "<group>"; };
+		E3E29E1622F6736B009DA589 /* TrackSectionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackSectionsTableViewCell.swift; sourceTree = "<group>"; };
+		E3E29E1722F6736B009DA589 /* TrackSectionsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackSectionsTableViewCell.xib; sourceTree = "<group>"; };
+		E3E29E1A22F6A66C009DA589 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
+		E3E29E1C22F6CB0D009DA589 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		E3E29E1E22F6CB87009DA589 /* SafariBasedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariBasedViewController.swift; sourceTree = "<group>"; };
+		E3E29E2022F6EE28009DA589 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		E3E29E2222F6EE30009DA589 /* EmptyStateView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyStateView.xib; sourceTree = "<group>"; };
 		E9CC7776A2256E17FD80E4B4 /* Pods_iTunesStoreApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTunesStoreApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -54,7 +86,6 @@
 				D0EF174BE8989E0E15B0C354 /* Pods-iTunesStoreApp.debug.xcconfig */,
 				1DFC0090885507EF9440C4DC /* Pods-iTunesStoreApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -80,13 +111,61 @@
 			isa = PBXGroup;
 			children = (
 				E3E29DEE22F65B06009DA589 /* AppDelegate.swift */,
-				E3E29DF022F65B06009DA589 /* ViewController.swift */,
-				E3E29DF222F65B06009DA589 /* Main.storyboard */,
 				E3E29DF522F65B0B009DA589 /* Assets.xcassets */,
-				E3E29DF722F65B0B009DA589 /* LaunchScreen.storyboard */,
 				E3E29DFA22F65B0B009DA589 /* Info.plist */,
+				E3E29E0122F65D32009DA589 /* Controllers */,
+				E3E29E0022F65D28009DA589 /* Views */,
+				E3E29E0422F65D5B009DA589 /* Models */,
+				E3E29E0722F65DF1009DA589 /* Managers */,
 			);
 			path = iTunesStoreApp;
+			sourceTree = "<group>";
+		};
+		E3E29E0022F65D28009DA589 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E3E29DF222F65B06009DA589 /* Main.storyboard */,
+				E3E29DF722F65B0B009DA589 /* LaunchScreen.storyboard */,
+				E3E29E1022F6726F009DA589 /* TrackCollectionViewCell.swift */,
+				E3E29E1122F6726F009DA589 /* TrackCollectionViewCell.xib */,
+				E3E29E1622F6736B009DA589 /* TrackSectionsTableViewCell.swift */,
+				E3E29E1722F6736B009DA589 /* TrackSectionsTableViewCell.xib */,
+				E3E29E2022F6EE28009DA589 /* EmptyStateView.swift */,
+				E3E29E2222F6EE30009DA589 /* EmptyStateView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E3E29E0122F65D32009DA589 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E3E29DF022F65B06009DA589 /* HomeViewController.swift */,
+				E3E29E1A22F6A66C009DA589 /* FavouritesViewController.swift */,
+				E3E29E1C22F6CB0D009DA589 /* DiscoverViewController.swift */,
+				E3E29E1E22F6CB87009DA589 /* SafariBasedViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E3E29E0422F65D5B009DA589 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E3E29E0222F65D48009DA589 /* TrackModel.swift */,
+				E3E29E0A22F66D65009DA589 /* CollectionModel.swift */,
+				E3E29E0C22F66D6C009DA589 /* UserModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E3E29E0722F65DF1009DA589 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				E3E29E0522F65DEB009DA589 /* APIManager.swift */,
+				E3E29E0822F669A3009DA589 /* DatabaseManager.swift */,
+				E3E29E0E22F66FAC009DA589 /* ContentManager.swift */,
+				E3E29E1422F67297009DA589 /* ExtensionsManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +228,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3E29E2322F6EE30009DA589 /* EmptyStateView.xib in Resources */,
+				E3E29E1922F6736B009DA589 /* TrackSectionsTableViewCell.xib in Resources */,
+				E3E29E1322F6726F009DA589 /* TrackCollectionViewCell.xib in Resources */,
 				E3E29DF922F65B0B009DA589 /* LaunchScreen.storyboard in Resources */,
 				E3E29DF622F65B0B009DA589 /* Assets.xcassets in Resources */,
 				E3E29DF422F65B06009DA589 /* Main.storyboard in Resources */,
@@ -213,8 +295,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3E29DF122F65B06009DA589 /* ViewController.swift in Sources */,
+				E3E29E1B22F6A66D009DA589 /* FavouritesViewController.swift in Sources */,
+				E3E29E0622F65DEB009DA589 /* APIManager.swift in Sources */,
+				E3E29E0D22F66D6C009DA589 /* UserModel.swift in Sources */,
+				E3E29DF122F65B06009DA589 /* HomeViewController.swift in Sources */,
+				E3E29E1822F6736B009DA589 /* TrackSectionsTableViewCell.swift in Sources */,
+				E3E29E1D22F6CB0D009DA589 /* DiscoverViewController.swift in Sources */,
+				E3E29E0922F669A3009DA589 /* DatabaseManager.swift in Sources */,
+				E3E29E1222F6726F009DA589 /* TrackCollectionViewCell.swift in Sources */,
+				E3E29E1F22F6CB87009DA589 /* SafariBasedViewController.swift in Sources */,
+				E3E29E1522F67297009DA589 /* ExtensionsManager.swift in Sources */,
+				E3E29E0322F65D48009DA589 /* TrackModel.swift in Sources */,
+				E3E29E0F22F66FAC009DA589 /* ContentManager.swift in Sources */,
+				E3E29E2122F6EE28009DA589 /* EmptyStateView.swift in Sources */,
 				E3E29DEF22F65B06009DA589 /* AppDelegate.swift in Sources */,
+				E3E29E0B22F66D65009DA589 /* CollectionModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

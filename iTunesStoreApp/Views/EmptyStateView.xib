@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EmptyStateView" customModule="iTunesStoreApp" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="hdu-op-Adr"/>
+                <outlet property="emptyImageView" destination="3ip-gY-Iom" id="7Ph-W5-UQE"/>
+                <outlet property="emptyLabel" destination="iLu-Hs-0ZN" id="aTn-I5-mdN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sad" translatesAutoresizingMaskIntoConstraints="NO" id="3ip-gY-Iom">
+                    <rect key="frame" x="143" y="284" width="128" height="128"/>
+                    <color key="tintColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There was an issue with the network" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iLu-Hs-0ZN">
+                    <rect key="frame" x="57" y="428" width="300" height="50.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="BqM-2r-Zl3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                    <color key="textColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="iLu-Hs-0ZN" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="4IL-DH-rIG"/>
+                <constraint firstItem="3ip-gY-Iom" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Z1M-gq-lwV"/>
+                <constraint firstItem="iLu-Hs-0ZN" firstAttribute="top" secondItem="3ip-gY-Iom" secondAttribute="bottom" constant="16" id="gge-dV-qYx"/>
+                <constraint firstItem="iLu-Hs-0ZN" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="tpy-Y8-QcN"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="50.724637681159422" y="35.491071428571423"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sad" width="128" height="128"/>
+    </resources>
+</document>
